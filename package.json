@@ -1,5 +1,5 @@
 {
-  "name": "rpsls",
+  "name": "node-rps",
   "version": "1.0.0",
   "description": "making a rock paper scissors game ",
   "main": "./lib/rpsls.js",
@@ -16,10 +16,11 @@
     "url": "https://github.com/comp426-2023-spring/a03-lasya02/issues"
   },
   "homepage": "https://github.com/comp426-2023-spring/a03-lasya02#readme",
-  "bin": { 
-    "node-rps": "./bin/rps-cli.js",
-    "node-rpsls": "./bin/rpsls-cli.js"
+  "bin": {
+    "node-rps": "bin/rps-cli.js",
+    "node-rpsls": "bin/rpsls-cli.js"
   },
+  "type": "module",
   "dependencies": {
     "minimist": "^1.2.8"
   }
