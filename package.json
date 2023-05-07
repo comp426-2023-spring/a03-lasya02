@@ -1,5 +1,5 @@
 {
-  "name": "node-rps",
+  "name": "node-rpsls",
   "version": "1.0.0",
   "description": "making a rock paper scissors game ",
   "main": "./lib/rpsls.js",
@@ -23,5 +23,9 @@
   "type": "module",
   "dependencies": {
     "minimist": "^1.2.8"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }

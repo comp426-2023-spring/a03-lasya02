@@ -37,7 +37,7 @@ let shot = args._[0];
 
 try {
 	console.log(JSON.stringify(rps(shot))); 
-} catch (e) {
+} catch (error) {
 	console.log(`Usage: node-rps [SHOT]
   Play Rock Paper Scissors (RPS)
   
