@@ -3,7 +3,7 @@
 import minimist from 'minimist';
 import {rpsls} from '../lib/rpsls.js';
 
-var args = minimist(process.argv.slice(2));
+const args = minimist(process.argv.slice(2));
 
 if (args.h || args.help){
     console.log(
@@ -45,7 +45,7 @@ if (args.r || args.rules){
 let shot = args._[0];
 
 try {
-	console.log(JSON.stringify(rpsls(shot))); 
+	console.log(JSON.stringify((rpsls(shot))))
 } catch (e) {
     console.log(
         `Usage: node-rpsls [SHOT]
@@ -59,8 +59,8 @@ try {
                             e.g. {"player":"rock"}
           node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.
                             e.g {"player":"rock","opponent":"Spock","result":"lose"}`);
-                    console.log(
-                        `Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
+    console.log(
+         `Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
                 
                         - Scissors CUTS Paper
                         - Paper COVERS Rock
@@ -72,4 +72,6 @@ try {
                         - Paper DISPROVES Spock
                         - Spock VAPORIZES Rock
                         - Rock CRUSHES Scissors`);
+
+    process.exit(1);
 }
